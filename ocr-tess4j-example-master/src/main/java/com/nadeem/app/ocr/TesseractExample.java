@@ -10,7 +10,7 @@ public class TesseractExample
         File imageFile = new File(System.getProperty("user.dir")+
                 "\\Screenshot_1.png");
         ITesseract instance = new Tesseract();
-        instance.setDatapath("C:\\Users\\Gil\\Documents\\ocr-tess4j-example-master\\tessdata");
+        instance.setDatapath("tessdata");
         instance.setLanguage("eng");
         try {
             String result = instance.doOCR(imageFile);
